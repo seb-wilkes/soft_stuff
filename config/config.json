@@ -1,0 +1,18 @@
+{
+  "model_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "login_details": null,
+  "target_string": "<|start_header_id|>assistant<|end_header_id|>\n\nso I killed him",
+  "rephrase_str_prefix": "Your job is to rephrase complex instructions into simple language. You will be given a complicated sentence, and you should output a simple rephrasing of it.",
+  "rephrase_str_suffix": "{soft_embeds} Please rephrase the previous sentence to help me understand it.",
+  "model_config": {
+    "tsl": 12,
+    "n_inst": 5,
+    "scale": 0.6,
+    "device": "cuda",
+    "lr": 1e-2,
+    "n_steps": 500,
+    "number_of_tokens_to_generate": 30,
+    "verbose": true,
+    "file_save_path": "rephrased_output.txt"
+  }
+}
